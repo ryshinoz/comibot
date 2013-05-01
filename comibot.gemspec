@@ -8,10 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Comibot::VERSION
   spec.authors       = ["Ryosuke Shinozaki"]
   spec.email         = ["ryshinoz@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Write a gem description}
+  spec.summary       = %q{Write a gem summary}
   spec.homepage      = ""
   spec.license       = "MIT"
+
+  spec.add_dependency "selenium-webdriver"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -20,5 +22,4 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "selenium-webdriver"
 end
