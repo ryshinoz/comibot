@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ryshinoz@gmail.com"]
   spec.description   = %q{Write a gem description}
   spec.summary       = %q{Write a gem summary}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ryshinoz/comibot"
   spec.license       = "MIT"
 
   spec.add_dependency "selenium-webdriver"

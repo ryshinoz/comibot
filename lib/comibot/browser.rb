@@ -1,10 +1,10 @@
 module Comibot
   class Browser
 
-    def initialize(url, timeout)
-      @url      = url
+    def initialize(timeout)
+      @login_url = "https://www.co-meeting.com/users/login"
       @session  = Selenium::WebDriver.for :chrome
-      @session.navigate.to @url
+      @session.navigate.to @login_url
       @wait = Selenium::WebDriver::Wait.new(:timeout => timeout)
     end
 
@@ -29,7 +29,7 @@ module Comibot
 
     def new_message(message)
       @wait.until {
-        @session.find_element(:xpath, '//div[@class="SWCEY replyBox" and @kind="rb"]').click
+        @session.find_element(:xpath, '//div[@class="SWCGY replyBox" and @kind="rb"]').click
       }
 
       reply_text = @session.find_element(:xpath, '//div[@class="document wave-editor-on"]')

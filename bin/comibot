@@ -4,4 +4,4 @@ dir = File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(dir) unless $LOAD_PATH.include?(dir)
 require 'comibot'
 
-Comibot::Message.run()
+Comibot::Message.run("ryosuke.shinozaki@gmo-media.jp", "s7jgvufv", "/g/gisui-doing", "篠崎ログ6", "テスト")
